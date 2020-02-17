@@ -18,25 +18,38 @@
             height: 200px;
         }
 
-        #box1 {
+        #rectangle {
             background: red;
         }
 
-        #box2 {
+        #circle {
             background: green;
+            border-radius: 50%;
+
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f0b7a1+0,752201+1,bf6e4e+100 */
+            background: #f0b7a1; /* Old browsers */
+            background: -moz-radial-gradient(center, ellipse cover,  #f0b7a1 0%, #752201 1%, #bf6e4e 100%); /* FF3.6-15 */
+            background: -webkit-radial-gradient(center, ellipse cover,  #f0b7a1 0%,#752201 1%,#bf6e4e 100%); /* Chrome10-25,Safari5.1-6 */
+            background: radial-gradient(ellipse at center,  #f0b7a1 0%,#752201 1%,#bf6e4e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
         }
 
-        #box3 {
-            background: blue;
+        #triangle {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 200px solid blue;
         }
     </style>
 </head>
 
 <body>
     <div id="container">
-        <div class="box" id="box1"></div>
-        <div class="box" id="box2"></div>
-        <div class="box" id="box3"></div>
+        <div class="box" id="rectangle"></div>
+        <div class="box" id="circle"></div>
+        <div class="box" id="triangle"></div>
     </div>
 </body>
 
